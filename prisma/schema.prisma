@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  username  String   @unique
+  password  String   // Hashed password
+  avatarUrl String?
+  settings  Json?    // User preferences (e.g., customDuration, lastMode)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  results     TypingResult[]
+  customTexts CustomText[]
+}
+
+model CustomText {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model TypingResult {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  cpm         Int      @map("wpm") // Map to existing 'wpm' column, effectively treating it as CPM storage
+  accuracy    Float
+  mode        String   // 'english', 'chinese', 'coder'
+  subMode     String?  // 'modern', 'classical' or 'python', 'javascript', etc.
+  difficulty  String   // 'easy', 'medium', 'hard'
+  duration    Int      // seconds
+  createdAt   DateTime @default(now())
+
+  @@index([mode, difficulty, cpm(sort: Desc)]) // Optimized for Leaderboard queries
+  @@index([userId])                            // Optimized for User History queries
+}

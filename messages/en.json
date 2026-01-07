@@ -1,0 +1,133 @@
+{
+    "Metadata": {
+        "title": "PType - Typing Practice",
+        "description": "Test and improve your typing speed with PType"
+    },
+    "HomePage": {
+        "welcome": "Welcome to PType",
+        "start": "Start Typing"
+    },
+    "Navigation": {
+        "practice": "Practice",
+        "leaderboard": "Leaderboard",
+        "history": "History",
+        "profile": "Profile",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout"
+    },
+    "Common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "viewOnGithub": "View on GitHub",
+        "startTyping": "Start typing to begin test..."
+    },
+    "History": {
+        "totalTests": "Total Tests",
+        "averageSpeed": "Avg Speed",
+        "bestSpeed": "Best Speed",
+        "totalTime": "Total Time",
+        "cpmTrend": "CPM Trend",
+        "recentActivity": "Recent Activity",
+        "table": {
+            "date": "Date",
+            "mode": "Mode",
+            "difficulty": "Difficulty",
+            "time": "Time",
+            "cpm": "CPM",
+            "accuracy": "Accuracy"
+        }
+    },
+    "Leaderboard": {
+        "difficulty": "Difficulty:",
+        "style": "Style:",
+        "language": "Language:",
+        "rank": "Rank",
+        "user": "User",
+        "cpm": "CPM",
+        "accuracy": "Accuracy",
+        "date": "Date"
+    },
+    "Profile": {
+        "pleaseLogin": "Please login to view your profile",
+        "joined": "Joined {date}",
+        "editProfile": "Edit Profile",
+        "avgSpeed": "Avg Speed",
+        "bestSpeed": "Best Speed",
+        "totalTests": "Tests",
+        "timeSpent": "Time Spent",
+        "statistics": "Statistics",
+        "save": "Save",
+        "cancel": "Cancel",
+        "logout": "Sign Out",
+        "activityHeatmap": "Activity Heatmap"
+    },
+    "Settings": {
+        "time": "Time:",
+        "mode": "Mode:",
+        "difficulty": "Difficulty:",
+        "difficultyLabels": {
+            "easy": "Easy",
+            "medium": "Medium",
+            "hard": "Hard"
+        },
+        "modeLabels": {
+            "english": "English",
+            "chinese": "Chinese",
+            "coder": "Coder",
+            "custom": "Custom"
+        },
+        "modeDescriptions": {
+            "english": "Common phrases & quotes",
+            "chinese": "Modern & Classical",
+            "coder": "Multi-language code",
+            "custom": "Your own text"
+        },
+        "allowBackspace": "Allow Backspace",
+        "caseSensitive": "Case Sensitive",
+        "ignorePunctuation": "Ignore Punctuation",
+        "chineseStyle": "Style:",
+        "programmingLanguage": "Language:",
+        "regenerate": "Regenerate Text",
+        "customText": "Custom Text Manager",
+        "customTextPlaceholder": "Type your custom text here...",
+        "customTitlePlaceholder": "Enter title...",
+        "editCustomText": "Manage Texts",
+        "startCustomTest": "Start Test",
+        "save": "Save",
+        "delete": "Delete",
+        "new": "New Text",
+        "savedTexts": "Saved Texts",
+        "noSavedTexts": "No saved texts found",
+        "cancel": "Cancel",
+        "titleAndContentRequired": "Title and content required"
+    },
+    "Stats": {
+        "wpm": "WPM",
+        "cpm": "CPM",
+        "lpm": "LPM",
+        "acc": "ACC%",
+        "sec": "SEC",
+        "errors": "Errors",
+        "sublabels": {
+            "wordsPerMin": "words/min",
+            "charsPerMin": "chars/min",
+            "linesPerMin": "lines/min",
+            "seconds": "seconds",
+            "accuracy": "accuracy",
+            "errorCount": "count"
+        },
+        "stopAndRestart": "Stop & Restart"
+    },
+    "Results": {
+        "title": "Test Completed!",
+        "chartTitle": {
+            "wpm": "WPM History",
+            "cpm": "CPM History",
+            "lpm": "LPM History"
+        },
+        "playAgain": "Play Again",
+        "restartHint": "Press {tab} + {enter} to restart"
+    }
+}
