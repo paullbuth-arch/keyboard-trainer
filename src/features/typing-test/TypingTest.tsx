@@ -7,6 +7,7 @@ import { useShallow } from 'zustand/react/shallow';
 import { useTypingStore } from '@/features/typing-test/store/typingStore';
 import { TextDisplay } from '@/features/typing-test/components/TextDisplay';
 import { StatsDisplay } from '@/features/typing-test/components/StatsDisplay';
+import { VirtualKeyboard } from '@/features/typing-test/components/VirtualKeyboard'; // 1. 引入虚拟键盘组件
 import { TypewriterTitle } from '@/features/typing-test/components/TypewriterTitle';
 import { useAuthStore } from '@/features/auth/store/authStore';
 import { AuthModal } from '@/features/auth/components/AuthModal';
@@ -303,6 +304,10 @@ export function TypingTest() {
                     inputRef={inputRef}
                     inputHandlers={inputHandlers}
                   />
+
+                  {/* 虚拟键盘组件 */}
+                  <VirtualKeyboard />
+
                 </motion.div>
               )
             ) : activeTab === 'leaderboard' ? (
