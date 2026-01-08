@@ -192,7 +192,7 @@ export function TypingTest() {
             <LanguageSwitcher />
 
             <motion.a
-              href="https://github.com/anYuJia/ptype/"
+              href="https://github.com/paullbuth-arch/keyboard-trainer"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-white transition-colors duration-300"

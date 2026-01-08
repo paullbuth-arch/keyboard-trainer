@@ -1,8 +1,8 @@
 <div align="center">
 
 <h1 align="center">
-  <img src="./public/logo.png" alt="PType Logo" width="48" height="48" style="vertical-align: bottom; margin-right: 10px;">
-  PType
+  <img src="./public/logo.png" alt="Keyboard Trainer Logo" width="48" height="48" style="vertical-align: bottom; margin-right: 10px;">
+  Keyboard Trainer
 </h1>
 <p align="center">
   <strong>The Ultimate Typing Practice Platform for Developers</strong>
@@ -10,16 +10,16 @@
 
 [简体中文](./README.md) | [English](./README_EN.md)
 
-[![License](https://img.shields.io/github/license/anYuJia/ptype?style=flat-square&color=blue)](LICENSE)
+[![License](https://img.shields.io/github/license/paullbuth-arch/keyboard-trainer?style=flat-square&color=blue)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/anYuJia/ptype?style=flat-square&color=yellow)](https://github.com/anYuJia/ptype/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/paullbuth-arch/keyboard-trainer?style=flat-square&color=yellow)](https://github.com/paullbuth-arch/keyboard-trainer/stargazers)
 
 <br/>
 
-**[Live Demo](#) · [Report Bug](https://github.com/anYuJia/ptype/issues) · [Request Feature](https://github.com/anYuJia/ptype/issues)**
+**[Live Demo](#) · [Report Bug](https://github.com/paullbuth-arch/keyboard-trainer/issues) · [Request Feature](https://github.com/paullbuth-arch/keyboard-trainer/issues)**
 
 </div>
 
@@ -27,14 +27,26 @@
 
 ## 📖 Table of Contents
 
+- [📖 Table of Contents](#-table-of-contents)
 - [✨ Highlights](#-highlights)
 - [📸 Screenshots](#-screenshots)
 - [🚀 Core Features](#-core-features)
+  - [1. Three Practice Modes](#1-three-practice-modes)
+  - [2. Smart Data Analysis](#2-smart-data-analysis)
+  - [3. User \& Social](#3-user--social)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [💻 Code Library](#-code-library)
 - [🏁 Quick Start](#-quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Production Deployment](#production-deployment)
+    - [Standard Deployment](#standard-deployment)
+    - [Docker Deployment](#docker-deployment)
 - [🔐 Security](#-security)
+  - [User Authentication](#user-authentication)
+  - [Request Signing System](#request-signing-system)
 - [🤝 Contributing](#-contributing)
+  - [How to add new practice code?](#how-to-add-new-practice-code)
 - [📄 License](#-license)
 - [🌟 Star History](#-star-history)
 
@@ -42,7 +54,7 @@
 
 ## ✨ Highlights
 
-PType is not just a typing tool; it's a training ground designed to **boost developer productivity**.
+Keyboard Trainer is not just a typing tool; it's a training ground designed to **boost developer productivity**.
 
 - 🎯 **Ultimate Experience**: Silky smooth animations and responsive design built with React 19 and Framer Motion.
 - 🌍 **Multi-language Support**: Supports English, Chinese (Modern/Classical), and natively supports **10+ programming languages**.
@@ -80,11 +92,11 @@ PType is not just a typing tool; it's a training ground designed to **boost deve
 
 ### 1. Three Practice Modes
 
-| Mode | Description | Use Case |
-| :--- | :--- | :--- |
-| **📝 English Mode** | Classic word practice, supports punctuation and case sensitivity | Improve daily English typing speed |
-| **🇨🇳 Chinese Mode** | Modern text, Classical text (Analects, Tao Te Ching) | Experience Chinese culture, improve Chinese typing |
-| **💻 Coder Mode** | Real code snippets, Linux commands, algorithms | **Must-have for developers**, boost coding efficiency |
+| Mode               | Description                                                      | Use Case                                              |
+| :----------------- | :--------------------------------------------------------------- | :---------------------------------------------------- |
+| **📝 English Mode** | Classic word practice, supports punctuation and case sensitivity | Improve daily English typing speed                    |
+| **🇨🇳 Chinese Mode** | Modern text, Classical text (Analects, Tao Te Ching)             | Experience Chinese culture, improve Chinese typing    |
+| **💻 Coder Mode**   | Real code snippets, Linux commands, algorithms                   | **Must-have for developers**, boost coding efficiency |
 
 ### 2. Smart Data Analysis
 
@@ -105,21 +117,21 @@ PType is not just a typing tool; it's a training ground designed to **boost deve
 
 Built with a modern full-stack tech stack to ensure high performance and maintainability.
 
-| Category | Technology |
-| :--- | :--- |
-| **Core Framework** | ![React](https://img.shields.io/badge/-React_19-20232A?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js_16-000000?logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
-| **Styling & Animation** | ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS_v4-38B2AC?logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?logo=framer&logoColor=white) |
-| **Backend & Data** | ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white) |
-| **State Management** | ![Zustand](https://img.shields.io/badge/-Zustand-443E38?logo=react&logoColor=white) |
-| **Visualization** | ![Recharts](https://img.shields.io/badge/-Recharts-22b5bf?logo=react&logoColor=white) |
-| **Internationalization** | ![next-intl](https://img.shields.io/badge/-next--intl-000000?logo=next.js&logoColor=white) |
-| **Auth & Security** | ![JWT](https://img.shields.io/badge/-JWT-000000?logo=json-web-tokens&logoColor=white) ![HMAC](https://img.shields.io/badge/-HMAC--SHA256-blue) |
+| Category                 | Technology                                                                                                                                                                                                                                                                  |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Core Framework**       | ![React](https://img.shields.io/badge/-React_19-20232A?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js_16-000000?logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
+| **Styling & Animation**  | ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS_v4-38B2AC?logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?logo=framer&logoColor=white)                                                                      |
+| **Backend & Data**       | ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white)                                                                                           |
+| **State Management**     | ![Zustand](https://img.shields.io/badge/-Zustand-443E38?logo=react&logoColor=white)                                                                                                                                                                                         |
+| **Visualization**        | ![Recharts](https://img.shields.io/badge/-Recharts-22b5bf?logo=react&logoColor=white)                                                                                                                                                                                       |
+| **Internationalization** | ![next-intl](https://img.shields.io/badge/-next--intl-000000?logo=next.js&logoColor=white)                                                                                                                                                                                  |
+| **Auth & Security**      | ![JWT](https://img.shields.io/badge/-JWT-000000?logo=json-web-tokens&logoColor=white) ![HMAC](https://img.shields.io/badge/-HMAC--SHA256-blue)                                                                                                                              |
 
 ---
 
 ## 💻 Code Library
 
-PType comes with a rich code practice library covering mainstream languages and tools:
+Keyboard Trainer comes with a rich code practice library covering mainstream languages and tools:
 
 <div align="center">
 
@@ -153,9 +165,9 @@ PType comes with a rich code practice library covering mainstream languages and 
 1. **Clone the repository**
 
 ```bash
-git clone --depth 1 https://github.com/anYuJia/ptype.git
-cd ptype
-```
+git clone --depth 1 https://github.com/paullbuth-arch/keyboard-trainer.git
+cd keyboard-trainer
+````
 
 2. **Install dependencies**
 
@@ -177,7 +189,7 @@ Edit the `.env` file:
 
 ```env
 # Database connection
-DATABASE_URL="postgresql://user:password@localhost:5432/ptype?schema=public"
+DATABASE_URL="postgresql://user:password@localhost:5432/keyboard_trainer?schema=public"
 
 # JWT Secret (for user authentication, use a strong random string)
 JWT_SECRET="your-jwt-secret-key"
@@ -196,6 +208,7 @@ SECURE_COOKIES=true
 4. **Initialize Database**
 
 > **Tip**: If you encounter issues downloading the Prisma engine, set the mirror first:
+>
 > ```bash
 > export PRISMA_ENGINES_MIRROR="https://registry.npmmirror.com/-/binary/prisma"
 > ```
@@ -227,7 +240,7 @@ npm start
 1. **Build Image**
 
 ```bash
-docker build -t ptype .
+docker build -t keyboard-trainer .
 ```
 
 2. **Run Container**
@@ -235,9 +248,9 @@ docker build -t ptype .
 ```bash
 docker run -d \
   -p 3000:3000 \
-  --name ptype \
+  --name keyboard-trainer \
   --env-file .env \
-  ptype
+  keyboard-trainer
 ```
 
 > ⚠️ **Note**: Ensure the `.env` file contains the correct `DATABASE_URL` and other necessary environment variables.
@@ -247,13 +260,13 @@ docker run -d \
 
 ## 🔐 Security
 
-PType has built-in multi-layer security protection mechanisms:
+Keyboard Trainer has built-in multi-layer security protection mechanisms:
 
 ### User Authentication
 
-- **JWT Authentication** - Uses JSON Web Token for user identity verification
-- **HttpOnly Cookie** - Tokens stored in HttpOnly cookies to prevent XSS attacks
-- **Secure Cookie** - Secure flag automatically enabled in production (HTTPS)
+* **JWT Authentication** - Uses JSON Web Token for user identity verification
+* **HttpOnly Cookie** - Tokens stored in HttpOnly cookies to prevent XSS attacks
+* **Secure Cookie** - Secure flag automatically enabled in production (HTTPS)
 
 > ⚠️ **HTTP Environment**: If your server doesn't have HTTPS configured, set `SECURE_COOKIES=false` in `.env`
 
@@ -262,11 +275,12 @@ PType has built-in multi-layer security protection mechanisms:
 All sensitive write operations (login, register, save scores, etc.) require a valid request signature.
 
 **Security Features:**
-- ⏱️ **Timestamp Validation** - Signatures expire after 5 minutes
-- 🔄 **Nonce Anti-Replay** - Each signature can only be used once
-- 🔒 **Data Integrity** - Verify request data hasn't been tampered with
-- 🌐 **Browser Fingerprint** - Increase request uniqueness, prevent cross-device replay
-- 🔐 **Multi-round HMAC** - Increase reverse engineering difficulty
+
+* ⏱️ **Timestamp Validation** - Signatures expire after 5 minutes
+* 🔄 **Nonce Anti-Replay** - Each signature can only be used once
+* 🔒 **Data Integrity** - Verify request data hasn't been tampered with
+* 🌐 **Browser Fingerprint** - Increase request uniqueness, prevent cross-device replay
+* 🔐 **Multi-round HMAC** - Increase reverse engineering difficulty
 
 For detailed documentation, see [src/lib/security/README.md](./src/lib/security/README.md)
 
@@ -298,15 +312,16 @@ This project is open-sourced under the **MIT License**. See the [LICENSE](LICENS
 ## 🌟 Star History
 
 <div align="center">
-  <a href="https://star-history.com/#anYuJia/ptype&Date">
-    <img src="https://api.star-history.com/svg?repos=anYuJia/ptype&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#paullbuth-arch/keyboard-trainer&Date">
+    <img src="https://api.star-history.com/svg?repos=paullbuth-arch/keyboard-trainer&type=Date" alt="Star History Chart">
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <b>If PType helps you, please give it a ⭐️ Star!</b>
+  <b>If Keyboard Trainer helps you, please give it a ⭐️ Star!</b>
   <br/>
-  <sub>Made with ❤️ by <a href="https://github.com/anYuJia">anYuJia</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/paullbuth-arch">paullbuth-arch</a></sub>
 </div>
+

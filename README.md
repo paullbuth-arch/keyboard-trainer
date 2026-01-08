@@ -1,8 +1,8 @@
 <div align="center">
 
 <h1 align="center">
-  <img src="./public/logo.png" alt="PType Logo" width="48" height="48" style="vertical-align: bottom; margin-right: 10px;">
-  PType
+  <img src="./public/logo.png" alt="Keyboard Trainer Logo" width="48" height="48" style="vertical-align: bottom; margin-right: 10px;">
+  Keyboard Trainer
 </h1>
 <p align="center">
   <strong>专为开发者打造的终极打字练习平台</strong>
@@ -10,16 +10,16 @@
 
 [English](./README_EN.md) | [简体中文](./README.md)
 
-[![License](https://img.shields.io/github/license/anYuJia/ptype?style=flat-square&color=blue)](LICENSE)
+[![License](https://img.shields.io/github/license/paullbuth-arch/keyboard-trainer?style=flat-square&color=blue)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/anYuJia/ptype?style=flat-square&color=yellow)](https://github.com/anYuJia/ptype/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/paullbuth-arch/keyboard-trainer?style=flat-square&color=yellow)](https://github.com/paullbuth-arch/keyboard-trainer/stargazers)
 
 <br/>
 
-**[在线演示](#) · [报告 Bug](https://github.com/anYuJia/ptype/issues) · [请求功能](https://github.com/anYuJia/ptype/issues)**
+**[在线演示](#) · [报告 Bug](https://github.com/paullbuth-arch/keyboard-trainer/issues) · [请求功能](https://github.com/paullbuth-arch/keyboard-trainer/issues)**
 
 </div>
 
@@ -27,22 +27,35 @@
 
 ## 📖 目录
 
+- [📖 目录](#-目录)
 - [✨ 项目亮点](#-项目亮点)
 - [📸 界面预览](#-界面预览)
 - [🚀 核心特性](#-核心特性)
+  - [1. 三大练习模式](#1-三大练习模式)
+  - [2. 智能数据分析](#2-智能数据分析)
+  - [3. 用户与社交](#3-用户与社交)
 - [🛠️ 技术栈](#️-技术栈)
 - [💻 代码库支持](#-代码库支持)
 - [🏁 快速开始](#-快速开始)
+  - [环境要求](#环境要求)
+  - [安装步骤](#安装步骤)
+  - [生产部署](#生产部署)
+    - [常规部署](#常规部署)
+    - [Docker 部署](#docker-部署)
 - [🔐 安全机制](#-安全机制)
+  - [用户认证](#用户认证)
+  - [请求签名系统](#请求签名系统)
 - [🤝 参与贡献](#-参与贡献)
+  - [如何添加新的练习代码？](#如何添加新的练习代码)
 - [📄 许可证](#-许可证)
 - [🌟 Star History](#-star-history)
 
 ---
 
+
 ## ✨ 项目亮点
 
-PType 不仅仅是一个打字练习工具，它是为了**提升开发者生产力**而生的训练场。
+Keyboard Trainer 不仅仅是一个打字练习工具，它是为了**提升开发者生产力**而生的训练场。
 
 - 🎯 **极致体验**：基于 React 19 和 Framer Motion 打造的丝滑动画与响应式设计。
 - 🌍 **多语言支持**：不仅支持英文、中文（现代/文言），更原生支持 10+ 种编程语言。
@@ -80,11 +93,11 @@ PType 不仅仅是一个打字练习工具，它是为了**提升开发者生产
 
 ### 1. 三大练习模式
 
-| 模式 | 描述 | 适用场景 |
-| :--- | :--- | :--- |
-| **📝 英文模式** | 经典单词练习，支持标点、大小写敏感 | 提升日常英文输入速度 |
-| **🇨🇳 中文模式** | 现代文、古文（论语、道德经） | 体验中华文化，提升中文打字 |
-| **💻 程序员模式** | 真实代码片段、Linux 命令、算法题 | **开发者必备**，提升 Coding 效率 |
+| 模式             | 描述                               | 适用场景                         |
+| :--------------- | :--------------------------------- | :------------------------------- |
+| **📝 英文模式**   | 经典单词练习，支持标点、大小写敏感 | 提升日常英文输入速度             |
+| **🇨🇳 中文模式**   | 现代文、古文（论语、道德经）       | 体验中华文化，提升中文打字       |
+| **💻 程序员模式** | 真实代码片段、Linux 命令、算法题   | **开发者必备**，提升 Coding 效率 |
 
 ### 2. 智能数据分析
 
@@ -105,21 +118,21 @@ PType 不仅仅是一个打字练习工具，它是为了**提升开发者生产
 
 本项目采用现代化的全栈技术构建，确保高性能与可维护性。
 
-| 领域 | 技术选型 |
-| :--- | :--- |
-| **核心框架** | ![React](https://img.shields.io/badge/-React_19-20232A?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js_16-000000?logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
-| **样式与动画** | ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS_v4-38B2AC?logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?logo=framer&logoColor=white) |
-| **后端与数据** | ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white) |
-| **状态管理** | ![Zustand](https://img.shields.io/badge/-Zustand-443E38?logo=react&logoColor=white) |
-| **图表可视化** | ![Recharts](https://img.shields.io/badge/-Recharts-22b5bf?logo=react&logoColor=white) |
-| **国际化** | ![next-intl](https://img.shields.io/badge/-next--intl-000000?logo=next.js&logoColor=white) |
-| **认证安全** | ![JWT](https://img.shields.io/badge/-JWT-000000?logo=json-web-tokens&logoColor=white) ![HMAC](https://img.shields.io/badge/-HMAC--SHA256-blue) |
+| 领域           | 技术选型                                                                                                                                                                                                                                                                    |
+| :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **核心框架**   | ![React](https://img.shields.io/badge/-React_19-20232A?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js_16-000000?logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
+| **样式与动画** | ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS_v4-38B2AC?logo=tailwind-css&logoColor=white) ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?logo=framer&logoColor=white)                                                                      |
+| **后端与数据** | ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?logo=prisma&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white)                                                                                           |
+| **状态管理**   | ![Zustand](https://img.shields.io/badge/-Zustand-443E38?logo=react&logoColor=white)                                                                                                                                                                                         |
+| **图表可视化** | ![Recharts](https://img.shields.io/badge/-Recharts-22b5bf?logo=react&logoColor=white)                                                                                                                                                                                       |
+| **国际化**     | ![next-intl](https://img.shields.io/badge/-next--intl-000000?logo=next.js&logoColor=white)                                                                                                                                                                                  |
+| **认证安全**   | ![JWT](https://img.shields.io/badge/-JWT-000000?logo=json-web-tokens&logoColor=white) ![HMAC](https://img.shields.io/badge/-HMAC--SHA256-blue)                                                                                                                              |
 
 ---
 
 ## 💻 代码库支持
 
-PType 内置了丰富的代码练习库，涵盖主流语言与工具：
+Keyboard Trainer 内置了丰富的代码练习库，涵盖主流语言与工具：
 
 <div align="center">
 
@@ -153,9 +166,9 @@ PType 内置了丰富的代码练习库，涵盖主流语言与工具：
 1. **克隆仓库**
 
 ```bash
-git clone --depth 1 https://github.com/anYuJia/ptype.git
-cd ptype
-```
+git clone --depth 1 https://github.com/paullbuth-arch/keyboard-trainer.git
+cd keyboard-trainer
+````
 
 2. **安装依赖**
 
@@ -177,7 +190,7 @@ cp .env.example .env
 
 ```env
 # 数据库连接
-DATABASE_URL="postgresql://user:password@localhost:5432/ptype?schema=public"
+DATABASE_URL="postgresql://user:password@localhost:5432/keyboard_trainer?schema=public"
 
 # JWT 密钥（用于用户认证，请使用强随机字符串）
 JWT_SECRET="your-jwt-secret-key"
@@ -196,6 +209,7 @@ SECURE_COOKIES=true
 4. **初始化数据库**
 
 > **提示**：如果遇到 Prisma 引擎下载失败，请先设置镜像：
+>
 > ```bash
 > export PRISMA_ENGINES_MIRROR="https://registry.npmmirror.com/-/binary/prisma"
 > ```
@@ -227,7 +241,7 @@ npm start
 1. **构建镜像**
 
 ```bash
-docker build -t ptype .
+docker build -t keyboard-trainer .
 ```
 
 2. **运行容器**
@@ -235,9 +249,9 @@ docker build -t ptype .
 ```bash
 docker run -d \
   -p 3000:3000 \
-  --name ptype \
+  --name keyboard-trainer \
   --env-file .env \
-  ptype
+  keyboard-trainer
 ```
 
 > ⚠️ **注意**：确保 `.env` 文件中包含正确的 `DATABASE_URL` 以及其他必要的环境变量。
@@ -247,13 +261,13 @@ docker run -d \
 
 ## 🔐 安全机制
 
-PType 内置了多层安全防护机制：
+Keyboard Trainer 内置了多层安全防护机制：
 
 ### 用户认证
 
-- **JWT 认证** - 使用 JSON Web Token 进行用户身份验证
-- **HttpOnly Cookie** - Token 存储在 HttpOnly Cookie 中，防止 XSS 攻击
-- **Secure Cookie** - 生产环境（HTTPS）自动启用 Secure 标志
+* **JWT 认证** - 使用 JSON Web Token 进行用户身份验证
+* **HttpOnly Cookie** - Token 存储在 HttpOnly Cookie 中，防止 XSS 攻击
+* **Secure Cookie** - 生产环境（HTTPS）自动启用 Secure 标志
 
 > ⚠️ **HTTP 环境配置**：如果服务器未配置 HTTPS，需要在 `.env` 中设置 `SECURE_COOKIES=false`
 
@@ -262,11 +276,12 @@ PType 内置了多层安全防护机制：
 所有敏感的写操作（登录、注册、保存成绩等）都需要携带有效的请求签名。
 
 **安全特性：**
-- ⏱️ **时间戳验证** - 签名 5 分钟后自动过期
-- 🔄 **Nonce 防重放** - 每个签名只能使用一次
-- 🔒 **数据完整性** - 验证请求数据未被篡改
-- 🌐 **浏览器指纹** - 增加请求唯一性，防止跨设备重放
-- 🔐 **多轮 HMAC** - 增加逆向破解难度
+
+* ⏱️ **时间戳验证** - 签名 5 分钟后自动过期
+* 🔄 **Nonce 防重放** - 每个签名只能使用一次
+* 🔒 **数据完整性** - 验证请求数据未被篡改
+* 🌐 **浏览器指纹** - 增加请求唯一性，防止跨设备重放
+* 🔐 **多轮 HMAC** - 增加逆向破解难度
 
 详细文档请参阅 [src/lib/security/README.md](./src/lib/security/README.md)
 
@@ -298,15 +313,15 @@ PType 内置了多层安全防护机制：
 ## 🌟 Star History
 
 <div align="center">
-  <a href="https://star-history.com/#anYuJia/ptype&Date">
-    <img src="https://api.star-history.com/svg?repos=anYuJia/ptype&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#paullbuth-arch/keyboard-trainer&Date">
+    <img src="https://api.star-history.com/svg?repos=paullbuth-arch/keyboard-trainer&type=Date" alt="Star History Chart">
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <b>如果觉得 PType 对你有帮助，请给个 ⭐️ Star 支持一下！</b>
+  <b>如果觉得 Keyboard Trainer 对你有帮助，请给个 ⭐️ Star 支持一下！</b>
   <br/>
-  <sub>Made with ❤️ by <a href="https://github.com/anYuJia">anYuJia</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/paullbuth-arch">paullbuth-arch</a></sub>
 </div>
