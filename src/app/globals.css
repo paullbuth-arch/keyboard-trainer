@@ -83,3 +83,58 @@ body {
 input:focus {
   ime-mode: disabled;
 }
+
+/* --- Cyberpunk Keyboard Effects --- */
+
+/* 1. 扫描线动画 */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.scanline-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgba(50, 255, 255, 0.05) 40%,
+      rgba(50, 255, 255, 0.1) 50%,
+      rgba(50, 255, 255, 0.05) 60%,
+      transparent);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: scanline 3s linear infinite;
+  z-index: 0;
+}
+
+/* 2. 信号故障/闪烁效果 (可选，用于错误反馈) */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}

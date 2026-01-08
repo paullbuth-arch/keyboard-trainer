@@ -305,8 +305,10 @@ export function TypingTest() {
                     inputHandlers={inputHandlers}
                   />
 
-                  {/* 虚拟键盘组件 */}
-                  <VirtualKeyboard />
+                  {/* 👇 在这里新增 VirtualKeyboard 组件 */}
+                  <div className="mt-8">
+                    <VirtualKeyboard />
+                  </div>
 
                 </motion.div>
               )
